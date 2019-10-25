@@ -13,7 +13,8 @@
     name: "{{ username }}"
     shell: /bin/bash
     state: present
-    password: "{{ admin_password_hash }}"
+    #password: "{{ admin_password_hash }}"
+    password: "{{ admin_password }}"
   tags:
     - user_accounts
     - users
